@@ -1,0 +1,271 @@
+
+.body{
+  background-color: blueviolet;
+}
+.topnav{
+    background-color: #21e00b;
+    overflow: hidden;
+    padding: 14px 16px;
+     
+}
+.topnav a{
+    float:left;
+    color:whitesmoke;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+    font-size: large;
+    font-family: sans-serif;
+    font-weight: bold;
+}
+.topnav a:hover{
+    background-color:black;
+    color:white;
+}
+.p{
+    color:solid black;
+    font-size: large;
+    font-style:oblique;
+}
+.locimg1{
+    justify-content: left;
+    display: inline;
+    height: 250;
+    width: 250;
+    
+}
+.locimg2{
+    justify-content: right;
+    align-content: space-between;
+    display: inline;
+    height: 250;
+    width: 250;
+}
+.img{
+     height: 550;
+     width: 550;
+
+     
+}
+.vid{
+    align-items: center;
+    width: 60%;
+}
+.details{
+    background-color:#86f08a;
+    padding-right: 5%;
+    padding-left: 2%;
+    justify-content: left;
+    font-style: italic;
+    border-color: black;
+    border-radius: 5px;
+
+    
+}
+.animal{
+    background-color:#dae099;
+    border-color: black;
+    border-radius: 5px;
+}
+.water{
+    background-color:#98d9d8;
+    font-size: larger;
+    border-color: black;
+    border-radius: 5px;
+}
+.nearby{
+    font-size: larger;
+    background-color:white;
+    border-color: black;
+    border-radius: 5px;
+}
+.dt{
+    margin: 5%;
+     
+}
+ 
+.li{
+    text-decoration: none;
+}
+a{
+    text-decoration: none; 
+}
+ 
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
+}
+
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    padding: 20px;
+}
+
+.profile-card {
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 300px;
+    text-align: center;
+    padding: 20px;
+    transition: transform 0.2s ease;
+}
+
+.profile-card:hover {
+    transform: scale(1.05);
+}
+
+.profile-photo {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-bottom: 15px;
+}
+
+h2 {
+    font-size: 24px;
+    margin-bottom: 5px;
+}
+
+h3 {
+    font-size: 18px;
+    color: #666;
+    margin-bottom: 15px;
+
+}
+
+.quote {
+    font-size: 14px;
+    font-style: italic;
+    color: #777;
+    margin-bottom: 20px;
+}
+
+.social-links a {
+    text-decoration: none;
+    color: #0077b5;
+    margin: 0 10px;
+    font-size: 16px;
+    transition: color 0.2s ease;
+}
+
+.social-links a:hover {
+    color: #005582;
+}
+.animate-text {
+    display: inline-block;
+    animation: textAnimation 2s ease-in-out infinite;
+}
+@keyframes textAnimation {
+    0% { opacity: 0; transform: translateY(-20px); }
+    50% { opacity: 1; transform: translateY(0); }
+    100% { opacity: 0; transform: translateY(20px); }
+}
+#one{
+    animation-timing-function: ease;
+}
+@keyframes text {
+    from{
+        margin-left: 60%;
+
+    }
+    to{
+        margin-left: 0%;
+    }
+    
+}
+h3{
+    animation-name:text;
+    animation-duration: 4s;
+    animation-iteration-count: infinite;
+    
+
+}
+.slider {
+    width: 100%;
+    max-width: 600px;
+    position: relative;
+    margin: auto;
+    overflow: hidden;
+  }
+
+  /* Slider images */
+  .slides {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+  }
+
+  .slides img {
+    width: 100%;
+    border: none;
+  }
+
+  /* Radio buttons */
+  input[type="radio"] {
+    display: none;
+  }
+
+  /* Navigation dots */
+  .navigation-manual {
+    position: absolute;
+    width: 100%;
+    bottom: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .manual-btn {
+    border: 2px solid #fff;
+    padding: 5px;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: background  0.3s ease;
+  }
+
+  .manual-btn:not(:last-child) {
+    margin-right: 10px;
+  }
+
+  .manual-btn:hover {
+    background: #fff;
+  }
+
+  /* Controls for sliding images */
+  #slide1:checked ~ .first {
+    transform: translateX(0);
+  }
+
+  #slide2:checked ~ .first {
+    transform: translateX(-100%);
+  }
+
+  
+  /* Automatic navigation */
+  .navigation-auto {
+    position: absolute;
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    top: 0;
+  }
+
+  .auto-btn1, .auto-btn2, .auto-btn3, .auto-btn4 {
+    width: 25%;
+    height: 100%;
+    pointer-events: none;
+    background: transparent;
+  }
+
+
